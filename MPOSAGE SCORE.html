@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sports News</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome CDN for social media icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+</head>
+<body>
+<header>
+  <div class="container header-container">
+    <a href="#" class="logo">
+      <img src="logo.png" alt="MpoSage Score Logo" class="logo-image" />
+      <span class="logo-text">MpoSage Score</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#news">News</a></li>
+        <li><a href="#scores">Live Scores</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Teams ▼</a>
+          <ul class="dropdown-content" id="teamList">
+            <!-- team list items -->
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Breaking: FiFa Club World Cup Final on sunday 13th July 2025</h2>
+      <p>Stay tuned for live coverage and expert analysis.</p>
+      <a href="#live" class="btn">Watch Live</a>
+    </div>
+  </section>
+
+  <section id="scores" class="live-scores">
+    <div class="container">
+      <h3>Upcoming Matches</h3>
+      <div class="scores-ticker" id="scores-ticker">
+        <!-- Scores will scroll here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="news-section">
+        <div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search news..." />
+</div>
+    <div class="container">
+      <h3>Latest News</h3>
+      <div class="news-cards">
+        <article class="news-card">
+          <img src="epl.webp" alt="Football Match" />
+          <h4>Premier League will back on 15th August 2025</h4>
+          <p>Many teams have returned in their training for preparing...</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="news-card">
+          <img src="lebron.jpg" alt="Basketball Game" />
+          <h4>Basketball Season Kicks Off</h4>
+          <p>Exciting new season with fresh talent and fierce competition.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="news-card">
+          <img src="rda epl.png" alt="Rwanda League" />
+          <h4>Tennis Star Advances to Finals</h4>
+          <p>Dominating performance in the semi-finals sets stage for epic showdown.</p>
+          <a href="#">Read More About this Match</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="teamInfo" class="team-info">
+  <div class="container">
+    <h3>Team Information</h3>
+    <div id="teamContent">
+      <p>Please select a team from the menu above to see its latest news and info.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+      <h3>Upcoming Schedule</h3>
+      <ul>
+        <li><strong>Sunday, July 6:</strong> Championship Final - 5:00 PM</li>
+        <li><strong>Monday, July 7:</strong> Friendly Match - 7:00 PM</li>
+        <li><strong>Wednesday, July 9:</strong> Player Meet & Greet - 3:00 PM</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <p>
+        We bring you the latest and most reliable sports news with unmatched
+        passion and accuracy. Stay connected with us on social media for live
+        updates, expert insights, and exclusive content.
+      </p>
+  
+      <div class="social-icons">
+        <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/yourprofile" target="_blank" aria-label="X Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>Contact us at <a href="mailto:support@sportpulse.com">support@sportpulse.com</a></p>
+      <p>&copy; 2025 SportPulse. All rights reserved.</p>
+    </div>
+    <div class="newsletter">
+  <h3>Subscribe to our Newsletter</h3>
+  <form id="newsletterForm">
+    <input type="email" id="emailInput" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  <p id="newsletterMessage"></p>
+</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
